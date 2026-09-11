@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "Alkeari License Agreement"
+
+[[mods]]
+modId = "ultimineunchained"
+version = "${version}"
+displayName = "Ultimine Unchained"
+authors = "Alkeari"
+logoFile = "icon.png"
+description = "Companion mod for FTB Ultimine - mine every block in your shape and control how much durability each operation costs."
+
+[[dependencies.ultimineunchained]]
+modId = "forge"
+mandatory = true
+versionRange = "[47.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ultimineunchained]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ultimineunchained]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ultimineunchained]]
+modId = "ftbultimine"
+mandatory = true
+versionRange = "[2001,)"
+ordering = "AFTER"
+side = "BOTH"
