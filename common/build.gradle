@@ -1,0 +1,13 @@
+architectury {
+    common(rootProject.enabled_platforms.split(","))
+}
+
+dependencies {
+    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
+
+    // FTB compile-only: provides class signatures for the mixin target (FTBUltimine.blockBroken).
+    // Both Forge and NeoForge share the same class structure so the NeoForge artifact suffices here.
+    modCompileOnly "dev.ftb.mods:ftb-ultimine-neoforge:${rootProject.ftbultimine_version}"
+    modCompileOnly "dev.ftb.mods:ftb-library-neoforge:${rootProject.ftblibrary_version}"
+}
