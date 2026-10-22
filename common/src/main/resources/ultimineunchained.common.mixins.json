@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.alkeari.ultimineunchained.mixin",
+  "compatibilityLevel": "JAVA_${javaVersion}",
+  "mixins": [
+    "UltimineMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
